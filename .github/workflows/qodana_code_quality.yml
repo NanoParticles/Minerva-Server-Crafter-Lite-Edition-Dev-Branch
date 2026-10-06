@@ -22,7 +22,7 @@ jobs:
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2024.2
         with:
-            linters: jvm
+            linters: python
             pr-mode: false
         env:
             QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_182572224 }}
