@@ -4,6 +4,7 @@ on:
   pull_request:
   push:
     branches:
+      - main
       - main-lite-branch
       - 'releases/*'
 
@@ -23,7 +24,7 @@ jobs:
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2024.2
         with:
-          args: --linter,jetbrains/qodana-python:2024.2
+          linter: jetbrains/qodana-python:2024.2
           pr-mode: false
         env:
           QODANA_TOKEN: ${{ secrets.QODANA_TOKEN_182572224 }}
