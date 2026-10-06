@@ -20,7 +20,7 @@ profile:
 #plugins:
 #  - id: <plugin.id> #(plugin id can be found at https://plugins.jetbrains.com)
 #Specify Qodana linter for analysis (Applied in CI/CD pipeline)
-linter: jetbrains/qodana-<linter>:latest
+linter: jetbrains/qodana-python:2024.2
 exclude:
   - name: PyUnresolvedReferencesInspection
   - name: PyReturnFromInitInspection
@@ -73,31 +73,3 @@ exclude:
   - name: PyListCreationInspection
   - name: PyOldStyleClassesInspection
   - name: PyOverloadsInspection
-  - name: PyPep8Inspection
-  - name: PyPep8NamingInspection
-  - name: PoetryPackageVersionsInspection
-  - name: PyNestedDecoratorsInspection
-  - name: PyTrailingSemicolonInspection
-  - name: PyRedeclarationInspection
-  - name: PySimplifyBooleanCheckInspection
-  - name: PyRedundantParenthesesInspection
-  - name: PyShadowingBuiltinsInspection
-  - name: PyShadowingNamesInspection
-  - name: PySingleQuotedDocstringInspection
-  - name: PyStatementEffectInspection
-  - name: PyStubPackagesAdvertiser
-  - name: PyRelativeImportInspection
-  - name: PyDefaultArgumentInspection
-  - name: PyChainedComparisonsInspection
-  - name: PyTupleAssignmentBalanceInspection
-  - name: PyTupleItemAssignmentInspection
-  - name: PyDocstringTypesInspection
-  - name: PyUnboundLocalVariableInspection
-  - name: PyBroadExceptionInspection
-  - name: PyUnnecessaryBackslashInspection
-  - name: PyUnreachableCodeInspection
-  - name: PyPackageRequirementsInspection
-  - name: PyUnusedLocalInspection
-  - name: PyComparisonWithNoneInspection
-  - name: PySuperArgumentsInspection
-  - name: PyExceptClausesOrderInspection
